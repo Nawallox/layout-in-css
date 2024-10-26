@@ -6,6 +6,17 @@
     <title>Basic Layout 7</title>
     <link rel="stylesheet" href="../style.css">
     <style>
+       body{
+        display: grid;
+        grid-template-columns: 1fr 5fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 0.5cm;
+      }
+ 
+      header {
+        grid-column:span 2;
+ 
+      }
       main {
         padding: 1em;
       }
@@ -15,8 +26,12 @@
       p {
         margin: 0;
       }
-      
-      /* Doe hier jouw ding! */
+ 
+      footer {
+        grid-row: 1 / -1;
+        grid-column: 3;
+       
+      }
     </style>
   </head>
   <body id="basic-layout-7">
